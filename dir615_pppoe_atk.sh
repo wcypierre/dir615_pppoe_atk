@@ -6,7 +6,7 @@ LINE_END=$((LINE_START + 4))
 LINE="$LINE_START,${LINE_END}p;${LINE_END}q"
 sed -n $LINE dir615_atk_raw > dir615_atk_js
 
-if [ -s dir_atk_js ] 
+if [ -s dir615_atk_js ] 
 then
 	python dir615_unifi.py
 else
